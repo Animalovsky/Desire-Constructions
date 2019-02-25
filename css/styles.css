@@ -1,0 +1,1142 @@
+/* GENERAL STYLES */
+
+@font-face {
+    font-family: 'brandon_grotesquemedium';
+    src: url('../fonts/brandon_med-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_med-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'brandon_grotesquebold';
+    src: url('../fonts/brandon_bld-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_bld-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brandon_grotesquelight';
+    src: url('../fonts/brandon_light-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'brandon_grotesqueregular';
+    src: url('../fonts/brandon_reg-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'brandon_grotesquethin';
+    src: url('../fonts/brandon_thin-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html {
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 2;
+	font-family: 'brandon_grotesqueregular';
+	background-color:#f2f2f2;
+	font-size:16px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html { overflow-y: scroll; }
+/* General Styles */
+*{
+	box-sizing:border-box;
+}
+a{
+	text-decoration:none;
+	color:inherit;
+	font-family: 'brandon_grotesquebold';
+		line-height:4;
+		border:0;
+}
+a:focus,.section a,.section-green a,.section-green2 a{
+	border:0;
+}
+img{
+	image-rendering: -webkit-optimize-contrast;
+}
+.bigp{
+	  font-family: 'brandon_grotesquemedium';
+	  font-size:18pt;
+	  text-align:left;
+}
+.bigp2{
+	  font-family: 'brandon_grotesqueregular';
+	  font-size:14pt;
+	  text-align:left;
+	  width:100%;
+	  padding:0px 25px 0px 25px;
+}
+.clear{
+	clear:both;
+}
+.border, .border2{
+	border-bottom:5px solid #50bf4e;
+	width:50px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+.border2{
+	margin-bottom:50px;
+	
+}
+.menu-line{
+	border-bottom:2.5px solid #f2f2f2;
+	width:30px;
+}
+h1{
+	font-size:24pt;
+	padding-bottom:35px;
+}
+h2{
+	font-size:19pt;
+	padding-bottom:35px;
+	padding-top:35px;
+}
+h4{
+	font-size:14pt;
+}
+h3{
+	font-size:15pt;
+	letter-spacing:1.5pt;
+	font-family: 'brandon_grotesquebold';
+}
+h5{
+	font-size:12pt;
+}
+h1,h2{
+	text-align:center;
+	font-family: 'brandon_grotesquebold';
+	letter-spacing:2pt;
+}
+h4, h5{
+	letter-spacing:0.5pt;
+	font-family: 'brandon_grotesquemedium';
+}
+div,p{
+	line-height:2;
+}
+.section{
+	padding:100px 10% 100px 10%;
+	width:100%;
+	height:auto;
+}
+.section-green{
+	padding:100px 10% 100px 10%;
+	width:100%;
+	height:auto;
+	background-color:#304f40;
+	color:#f2f2f2;
+	background: url(http://maugustyn.com/dc/images/pattern2.png) repeat;	
+	opacity:1;
+}
+.section-green2{
+	padding:100px 10% 100px 10%;
+	width:100%;
+	height:auto;
+	background-color:#111111;
+	color:#f2f2f2;
+	opacity:1;
+}
+.clearfix::after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+.why-us-option h3{
+	text-align:center;
+}
+.why-us-option p{
+	vertical-align:bottom;
+}
+.why-us-option{
+	width:23%;
+	margin:0 1% 0 1%;
+	float:left;
+	text-align:center;
+	vertical-align:top;
+	background-color:#f2f2f2;
+	border:2px solid #8fc14a;
+	color:#002627;
+	font-size:12pt;
+	padding:25px;
+}
+.why-us-option img{
+	max-width:100%;
+}
+.more-button{
+	background-color:#0b9444;
+	width:200px;
+	border:2.5px solid #f2f2f2;
+	font-size:12pt;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:1;
+	letter-spacing: 0.2em;
+	color:#fff;
+}
+.more-button a{
+	color:#fff;
+}
+
+
+/* Welcome page background styles */
+
+.wp-caption {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+.wp-caption img {
+	width: 100%;
+	height: 100vh;
+	border-bottom: thick solid #fff;
+	margin-top: 0;
+}
+.wp-caption:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.wp-caption-text {
+	position: absolute;
+	width: 100%;
+	color: #fff;
+	left: 0;
+	bottom: 0;
+	padding: 2em;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'brandon_grotesquebold';
+	margin-bottom:100px;
+}
+.main-page {
+	background: url(http://maugustyn.com/dc/images/home-background8.jpg) no-repeat center center;	
+	opacity:1;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+.slogan {
+	text-align: center;
+	color: #fff;
+	letter-spacing: 0.5em;
+	position: relative;
+	font-family: 'brandon_grotesquebold';
+}
+.slogan p{
+	font-size:85pt;
+	text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+}
+.slogan h2{
+	font-size:25pt;
+	text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+}
+.logo{
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index:0;
+	width:100%;
+	  margin-left: auto; 
+  margin-right: auto; 
+	background-color:#f2f2f2;
+	text-align:center;
+}
+.logo img{
+	
+}
+.phone{
+	position: absolute;
+	left: 700px;
+	right: 0;
+	top: 15px;
+	z-index:0;
+	  margin-left: auto; 
+  margin-right: auto; 
+  color:#0b9444;
+  font-family: 'brandon_grotesquebold';
+}
+.restoration-service{
+	width:100%;
+	height:auto;
+	background: url(http://maugustyn.com/dc/images/furniture-banner.jpg) no-repeat;	
+	margin-top:35px;
+	padding:25px;
+}
+.restoration-service h1{
+	font-size:36pt;
+	padding:25px 0px 0px 0px;
+	margin:0;
+	background-color:rgba(255, 255, 255, 0.6);
+}
+.restoration-service h2{
+	font-size:26pt;
+	padding:0px 0px 25px 0px;
+	margin:0;
+	background-color:rgba(255, 255, 255, 0.6);
+}
+.restoration-service img{
+	padding:25px;
+}
+.service-option{
+	width:33.3%;
+	float:left;
+	text-align:left;
+	vertical-align:top;
+	color:#002627;
+	line-height:1.5;
+	background-color:#f2f2f2;
+	padding:0px 25px 0px 25px;
+}
+.service-option a{
+	color:#8fc14a;
+}
+.service-option h3{
+	padding:10px 0px 10px 0px;
+}
+.service-option img{
+	width:100%;
+}
+.restoration{
+	padding:0px 25px 0px 25px;
+}
+.our-services img{
+	width:100%;
+}
+a{
+	color:#8fc14a;
+	outline : none;
+}
+.b{
+	background: url(http://maugustyn.com/dc/images/pattern.png) repeat;
+}
+.promotion {
+	max-width:100%;
+	height:150px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display:block;
+	display:flex;
+	justify-content:space-between;
+	background-color:#29cc7a;
+}
+.promotion h1{
+	font-size:2vw;
+}
+.promo-section1{
+	display:inline-block;
+	text-align:left;
+	background: url(http://maugustyn.com/dc/images/promo-price.png) no-repeat;	
+	min-width:220px;
+	height:150px;
+}
+.promo-section2{
+	display:inline-block;
+	padding-top:50px;
+}
+.promo-section3{
+	padding-right:50px;
+}
+.slider{
+	border:10px solid #fff;
+	margin:0px 25px 0px 25px;
+}
+
+.product-spec{
+	width:25%;
+	float:left;
+	text-align:left;
+	vertical-align:top;
+	color:#002627;
+	background-color:#f2f2f2;
+	padding:0px 25px 0px 25px;
+}
+.product-spec h4{
+	text-align:left;
+}
+.aboutus{
+	background-color:#70cc76;
+}
+.about{
+	background-color:#f2f2f2;
+	border:2px solid #0b9444;
+	color:#002627;
+	padding:0px 25px 0px 25px;
+}
+.about p{
+	text-align: left;
+}
+.about img{
+	max-width:100%;
+	padding:25px;
+float:left;
+}
+.about p{
+	padding:25px;
+}
+.contact-section{
+	width:33.3%;
+	float:left;
+	text-align:center;
+	vertical-align:bottom;
+	padding:0px 25px 0px 25px;
+}
+.contact-section img{
+    height: auto;
+	width:35%;
+}
+.contact-section h3,h4{
+	text-align:center;
+}
+.contact-section p{
+	font-size:12pt;
+}
+.map iframe{
+	width:100%;
+	height:250px;
+}
+.social-media{
+	text-align:center;
+}
+.social-media h4{
+	padding:25px 0px 25px 0px;
+}
+.social-media img{
+	text-align:center;
+	margin:25px;
+	max-width:100%;
+}
+.other-web{
+	width:100%;
+	text-align:center;
+}
+.other-web img{
+	cursor:pointer;
+	padding:25px;
+	max-width:100%;
+}
+.other-web span{
+	vertical-align: middle;
+	text-align:left;
+}
+.other h1{
+
+}
+footer{
+	padding:100px 5% 0px 5%;
+	width:100%;
+	background-color:#304f40;
+	color:#f2f2f2;
+	background: url(http://maugustyn.com/dc/images/footer-background.jpg) no-repeat;	
+	opacity:1;
+}
+footer h4,h5{
+	vertical-align:bottom;
+	text-align:left;
+}
+
+.footer-section{
+	width:26%;
+	float:left;
+	font-family: 'brandon_grotesquelight';
+}
+.footer-section-s{
+	width:22%;
+	float:left;
+	font-family: 'brandon_grotesquelight';
+}
+.footer-section-s  img{
+	margin:0px 15px 0px 0px;
+}
+.bottom{
+	margin-top:100px;
+	border-top:5px solid #fff;
+}
+.bottom p{
+	font-family: 'brandon_grotesquebold';
+	letter-spacing: 0pt;
+}
+.bot{
+	float:right;
+}
+.fot{
+	color:#8fc14a;
+}
+.pad{
+	 padding: 15px 0px 0px 0px;
+    font-family: 'brandon_grotesquelight';
+}
+.festool{
+	text-align:center;
+	padding:25px 0px 0px 0px;
+}
+.festool-span img{
+width:auto;
+padding:10px 0px 0px 20px;
+}
+
+
+.slider img{
+	width:100%;
+}
+.slider{
+	width:60%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.product-spec-reveal{
+	display:none;
+	
+}
+.footer-section-s a{
+	line-height:2;
+}
+#nav, #showMenu{
+	display:none;
+}
+.team-member{
+	width:50%;
+	float:left;
+	padding:0px 50px 50px 50px;
+}
+.team-member h3{
+	text-align:center;
+	
+}
+@media screen and (max-width: 1250px) {
+.section{
+	padding-left:5%;
+	padding-right:5%;
+}
+.section-green{
+	padding-left:5%;
+	padding-right:5%;
+}
+.section-green2{
+	padding-left:5%;
+	padding-right:5%;
+}
+.why-us-option{
+	width:22%;
+	margin:0 1.5% 0 1.5%;
+	float:left;
+	text-align:center;
+	vertical-align:top;
+	padding:15px;
+}
+footer{
+	padding-left:5%;
+	padding-right:5%;
+}
+.other-web{
+	margin-top:35px;
+	width:100%;
+	text-align:center;
+	margin-left:0%;
+}
+.service-option{
+	padding:0px 25px 0px 25px;
+}
+.contact-section{
+	width:33.3%;
+	margin:0;
+	float:left;
+	text-align:center;
+	vertical-align:bottom;
+}
+.contact-section img{
+    height: auto;
+	padding:20px;
+	width:50%;
+}
+.bot{
+	display:none;
+}
+}
+@media screen and (max-width: 1024px) {
+h1{
+	font-size:24pt;
+	padding-bottom:25px;
+}
+h2{
+	font-size:19pt;
+	padding-bottom:35px;
+	padding-top:25px;
+}
+.section{
+	padding:70px 10% 70px 10%;
+}
+.section-green{
+	padding:70px 10% 70px 10%;
+}
+.section-green2{
+	padding:70px 10% 70px 10%;
+}
+.border2{
+	margin-bottom:40px;
+}
+.why-us-option{
+	width:45%;
+	margin:2.5%;
+	min-height:290px;
+	float:left;
+	text-align:center;
+	vertical-align:top;
+	padding:15px;
+}
+.contact-section{
+	width:50%;
+	padding:0%;
+	float:left;
+	text-align:center;
+	vertical-align:bottom;
+	font-size:12pt;
+}
+.contact-section p{
+	font-size:14pt;
+}
+.contact-section img{
+    height: auto;
+	padding:20px;
+	width:60%;
+}
+.map{
+	width:100%;
+	text-align:center;
+	padding-top:25px;
+}
+.service-option{
+	padding:0px 25px 0px 25px;
+}
+.other-web{
+	margin-top:25px;
+	width:100%;
+	text-align:center;
+	margin-left:0%;
+}
+.other-web img{
+	width:20%:
+}
+}
+@media screen and (max-width: 930px) {
+.phone{
+		display:none;
+	}
+	.team-member{
+	width:100%;
+	float:left;
+	padding:25px;
+}
+}
+
+@media screen and (max-width: 700px) {
+.product-spec-hide{
+	display:none;
+}
+.product-spec-reveal{
+	display:inline;
+	
+}
+.product-spec-reveal a{
+	padding:10px 0px 0px 5%;
+}
+h1{
+	font-size:21pt;
+	padding-bottom:15px;
+}
+h2{
+	font-size:17pt;
+	padding:15px;
+}
+h3{
+	font-size:14pt;
+	letter-spacing:1pt;
+	font-family: 'brandon_grotesquebold';
+}
+h4{
+	font-size:13pt;
+}
+h5{
+	font-size:12pt;
+}
+p{
+	font-size:10pt;
+}
+.bigp{
+	  font-family: 'brandon_grotesquemedium';
+	  font-size:16pt;
+	  text-align:left;
+}
+.bigp2{
+	  font-family: 'brandon_grotesqueregular';
+	  font-size:12pt;
+	  text-align:left;
+	  width:100%;
+	  padding:0px 15px 0px 15px;
+}
+.section{
+	padding:50px 5% 50px 5%;
+}
+.section-green{
+	padding:50px 5% 50px 5%;
+}
+.section-green2{
+	padding:50px 5% 50px 5%;
+}
+.why-us-option{
+	width:100%;
+	margin:2.5% 0% 2.5% 0%;
+	float:left;
+	text-align:center;
+	vertical-align:top;
+	padding:15px;
+	min-height:150px;
+}
+
+.slogan {
+	letter-spacing: 0.3em;
+	padding:10px 0px 10px 0px;
+}
+.slogan p{
+	font-size:50pt;
+}
+.slogan h2{
+	font-size:18pt;
+}
+.wp-caption-text {
+	width: 100%;
+	padding: 0.5em;
+	margin-bottom:50px;
+}
+.more-button{
+	width:150px;
+	padding:0;
+	border:1.5px solid #f2f2f2;
+	font-size:10pt;
+	margin-top:0px;
+	letter-spacing: 0.1em;
+}
+.more-button2{
+	background-color:#0b9444;
+	width:160px;
+	border:2px solid #f2f2f2;
+	font-size:10pt;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:1;
+	letter-spacing: 0em;
+	color:#fff;
+margin-top:10px;
+margin-bottom:10px;
+}
+.more-button2 a{
+	color:#fff;
+}
+.border2{
+	border-bottom:5px solid #65fc6f;
+	width:50px;
+}
+.border2{
+	margin-bottom:20px;
+}
+.bigp{
+	  font-size:16pt;
+	  padding:10px 0px 10px 0px;
+}
+.pad3{
+	padding:20px;
+	margin-bottom:0px;
+}
+.service-option{
+	width:100%;
+	margin:0% 0% 5% 0%;
+	padding:0px 15px 0px 15px;
+}
+.service-option img,h3,a{
+	padding:0px;
+}
+.service-option img{
+	width:100%;
+	border:0px solid #eaf3de;
+}
+.restoration{
+	padding-top:0px;
+}
+.restoration-service{
+	margin-top:20px;
+	padding:15px;
+}
+.restoration-service h1{
+	font-size:24pt;
+	padding:0px 0px 0px 0px;
+	margin:0;
+	background-color:rgba(255, 255, 255, 0.6);
+}
+.restoration-service h2{
+	font-size:16pt;
+	padding:0px 0px 0px 0px;
+	margin:0;
+	background-color:rgba(255, 255, 255, 0.6);
+}
+.restoration-service img{
+	padding:15px;
+}
+.festool h1{
+	padding:15px 0 15px 0;
+}
+.festool h4{
+	text-align:center;
+}
+.festool-span img{
+width:50%;
+padding:10px 0px 0px 20px;
+}
+.about{
+	padding:0;
+}
+.product-spec{
+	width:50%;
+	padding:0px 15px 0px 15px;
+}
+.contact-section{
+	width:100%;
+	padding:15px;
+	float:left;
+	text-align:center;
+	vertical-align:bottom;
+	font-size:12pt;
+}
+.contact-section p{
+	font-size:14pt;
+}
+.contact-section h4{
+	text-align:center;
+}
+.contact-section img{
+    height: auto;
+	padding:0px;
+	width:30%;
+}
+.social-media img{
+	max-width:30%;
+	padding:10px;
+}
+.social-media{
+	padding:15px;
+}
+.social-media h4{
+	text-align:center;
+	padding:15px 0px 15px 0px;
+}
+.social-media img{
+	text-align:center;
+	margin:0px;
+	max-width:30%;
+}
+.other-web{
+	margin-top:2.5%;
+	width:100%;
+	text-align:center;
+	margin-left:0%;
+}
+.other-web img{
+	margin:2.5% 0% 2.5% 0%;
+}
+footer{
+	padding-left:5%;
+	padding-right:5%;
+	padding-top:5%;
+	padding-bottom:0%;
+	background: url(http://spray-polishing.co.uk/images/pattern.png) repeat;
+}
+footer h3,h4,h5{
+	vertical-align:bottom;
+	text-align:left;
+}
+
+.footer-section{
+	width:100%;
+	float:left;
+	font-family: 'brandon_grotesquelight';
+}
+.footer-section h3{
+	text-align:left;
+}
+
+.footer-section-s{
+	width:90%;
+	padding:15% 10% 0% 0%;
+	float:left;
+	font-family: 'brandon_grotesquelight';
+}
+.footer-section-s  img{
+	margin-right:15px;
+}
+.bottom{
+	margin-top:50px;
+	border-top:2.5px solid #fff;
+}
+.bottom p{
+	padding:15px 0px 15px 0px;
+}
+.promotion {
+	max-width:100%;
+	height:110px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display:block;
+	display:flex;
+	justify-content:space-between;
+	background-color:#29cc7a;
+}
+.promotion h1{
+	font-size:3vw;
+		padding:5px;
+}
+.promo-section1{
+	display:inline-block;
+	text-align:left;
+	background: url(http://maugustyn.com/dc/images/promo-price-mobile.png) no-repeat;	
+	min-width:160px;
+	min-height:110px;
+}
+.promo-section2{
+	display:inline-block;
+	padding-top:20px;
+}
+.promo-section3 {
+display:none;
+}
+.slogan p{
+	font-size:2em;
+}
+.slogan h2{
+	font-size:1em;
+}
+.slider{
+	width:75%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.nav{
+	background-color:#303030;
+	height:auto;
+	width:auto;
+}
+#nav {
+  display: block;
+  position: fixed;
+  margin-top: auto;
+  margin-bottom:auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: -165px;
+  width: 165px;
+  height:264px;
+  z-index: 999;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 1);
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+   border-left: 5px solid #0b9444;
+   
+}
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+#nav ul li {
+  display: block;
+  list-style: none;
+}
+
+#nav ul li a {
+  display: block;
+   padding-left: 25px;
+  color: #1e1e1e;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 20s ease;
+  transition: all 0.2s ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  font-size:10px;
+  font-family: 'brandon_grotesquebold';
+  border-top:2px solid;
+  border-bottom:2px solid;
+  border-color:rgba(48,48,48,0.1);
+}
+
+#nav ul li a:hover {
+  color: #fff;
+  background-color:#303030;
+}
+#nav ul li:hover {
+  border-right:5px solid #8fc14a;
+}
+
+#showMenu {
+  display: block;
+  position: fixed;
+  margin-top: auto;
+  margin-bottom:auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 999;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 5px;
+  text-align: left;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+-webkit-transform: translate3d(0, 0, 0);
+}
+#showMenu img{
+
+
+}
+
+.show {
+  right: 0px !important;
+  padding:0;
+}
+ul, menu, dir{
+	-webkit-margin-before:0;
+	-webkit-margin-after:0;
+	-webkit-padding-start:0;
+}
+.moveButton {
+  right: 165px !important;
+  color: #1e1e1e !important;
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+a{
+	border:0;
+	outline : none;
+}
+}
+@media screen and (max-width: 425px) {
+.logo {
+	width:100%;
+	margin-left:0;
+	margin-right:0;
+}
+.logo img {
+	width:100%;
+	margin-left:0;
+	margin-right:0;
+}
+.slogan {
+	letter-spacing: 0.3em;
+	padding:10px 0px 10px 0px;
+}
+.slogan p{
+	font-size:2em;
+}
+.slogan h2{
+	font-size:1em;
+}
+.wp-caption-text {
+	width: 100%;
+	padding: 0.5em;
+	margin-bottom:30px;
+}
+.product-spec{
+	width:100%;
+	padding:15px;
+}
+}

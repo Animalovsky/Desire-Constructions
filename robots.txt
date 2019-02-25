@@ -1,0 +1,2 @@
+User-agent: * 
+Sitemap: http://spray-polishing.co.uk/sitemap.xml
